@@ -10,6 +10,7 @@
 }
 html, body{
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -58,11 +59,12 @@ body {
     background-color: rgba(231, 229, 229, 0.911);
 }
 .upper{
-    padding-left: 20px;
+    padding-left: 40px;
     display: grid;
     grid-template-rows: 1fr; 
     grid-auto-flow: column;
     align-self: center;
+    padding-top: 20px;
 }
 
 .upper-left {
@@ -71,17 +73,14 @@ body {
     grid-auto-flow: column;
     gap: 0;
     max-width: 675px;
-}
-
-.lower-left * {
-    background-color: #377ce4;
+    align-items: center
 }
 
 .upper-right {
     display: grid;
     grid-template-columns: 40px 40px 200px;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -93,7 +92,7 @@ body {
 
 .lower {
     display: grid;
-    padding-left: 20px;
+    padding-left: 40px;
     grid-template-columns: 400px 200px;
     grid-template-rows: 1fr;  
     align-items: center;
@@ -103,12 +102,14 @@ body {
 .lower-left {
     display: grid;
     grid-template-columns: 40px 40px;
+    align-items: center;
 }
 
 .lower-right {
     display: grid;
     grid-template-columns: 100px 100px 100px;
-    gap: 40px;
+    gap: 30px;
+    padding-left: 230px;
 }
 
 .blue-button {
@@ -122,6 +123,64 @@ body {
     cursor: pointer;
 }
 
+.welcome-message {
+    display: grid;
+    grid-template-rows: 25px 40px;
+    grid-template-columns: 350px;
+    gap: 0;
+    font-size: 1em;
+    font-weight: 550;
+    padding-left: 60px;
+}
+
+#name-tag {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+#profile-icon-large {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: #377ce4;
+    padding: 5px;
+}
+
+#profile-icon-small {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #377ce4;
+    padding: 5px;
+}
+
 .interactables {
     padding-left: 20px;
+    display: grid;
+    grid-template-columns: 850px 300px;
+    grid-template-rows: 331.5px 331.5px;
+}
+
+.container-title {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: repeat(3, 200px);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+
+}
+
+.projects {
+    grid-row: 1/3;
 }
